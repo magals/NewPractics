@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Configuration;
+
 namespace LearnSeq
 {
 	public class Program
@@ -11,7 +13,7 @@ namespace LearnSeq
 			builder.Services.AddControllers();
 			builder.Services.AddLogging(loggingBuilder =>
 			{
-				loggingBuilder.AddSeq();
+				loggingBuilder.AddSeq(builder.Configuration.GetSection("Seq"));
 			});
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();
