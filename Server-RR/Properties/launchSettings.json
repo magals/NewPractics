@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Server-RR": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:64630;http://localhost:64634"
+    }
+  }
+}

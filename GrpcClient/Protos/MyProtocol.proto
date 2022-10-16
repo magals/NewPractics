@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService";
+
+package myproto;
+
+service MyProto
+{
+	rpc SendMessage(MessageRequest) returns(MessageReply);
+}
+
+message MessageRequest
+{
+	int32 name = 1;
+}
+
+message MessageReply
+{
+	int32 answer = 1;
+}

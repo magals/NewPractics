@@ -3,66 +3,77 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnSeq", "LearnSeq\LearnSeq.csproj", "{E6B5DCD0-EAAA-48C9-8F9A-566DDFB1A11D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnSeq", "LearnSeq\LearnSeq.csproj", "{E6B5DCD0-EAAA-48C9-8F9A-566DDFB1A11D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnRedis", "LearnRedis\LearnRedis.csproj", "{CF208BB2-BC94-4A36-95ED-30A339AA0DF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnRedis", "LearnRedis\LearnRedis.csproj", "{CF208BB2-BC94-4A36-95ED-30A339AA0DF6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LearnRabbitMQ", "LearnRabbitMQ", "{8C775AD7-8607-4363-AFF8-4A3C134D34A2}"
 	ProjectSection(SolutionItems) = preProject
 		templays.txt = templays.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer", "Producer\Producer.csproj", "{82896594-BCF4-481A-A88B-99E77AD2737B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producer", "Producer\Producer.csproj", "{82896594-BCF4-481A-A88B-99E77AD2737B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{03F2F84B-728C-4729-914C-E05E1DAA5B6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer", "Consumer\Consumer.csproj", "{03F2F84B-728C-4729-914C-E05E1DAA5B6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondConsumer", "SecondConsumer\SecondConsumer.csproj", "{4ABC1647-49DC-4D02-9C6D-BEEFC6CD1589}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondConsumer", "SecondConsumer\SecondConsumer.csproj", "{4ABC1647-49DC-4D02-9C6D-BEEFC6CD1589}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PUB_SUB", "PUB_SUB", "{A7818ADB-3FDB-4724-BAA0-C6D8C18AD265}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerPUBSUB", "ProducerPUBSUB\ProducerPUBSUB.csproj", "{68C2BAD5-2668-4E7E-924C-0C4217719A48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProducerPUBSUB", "ProducerPUBSUB\ProducerPUBSUB.csproj", "{68C2BAD5-2668-4E7E-924C-0C4217719A48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstConsumer", "FirstConsumer\FirstConsumer.csproj", "{8CD371E3-CF9D-4E18-B9AD-D19730334556}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstConsumer", "FirstConsumer\FirstConsumer.csproj", "{8CD371E3-CF9D-4E18-B9AD-D19730334556}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AnalyticsPaymentsProducer", "AnalyticsPaymentsProducer", "{6D1F9306-5A87-4B4A-8DFF-4B5A4757EE58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyticsConsumer", "AnalyticsConsumer\AnalyticsConsumer.csproj", "{F36287A7-E5AA-4920-BA27-B8E26E122976}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnalyticsConsumer", "AnalyticsConsumer\AnalyticsConsumer.csproj", "{F36287A7-E5AA-4920-BA27-B8E26E122976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentsConsumer", "PaymentsConsumer\PaymentsConsumer.csproj", "{79E42A22-6A19-4B12-9B17-9877B6D5199F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentsConsumer", "PaymentsConsumer\PaymentsConsumer.csproj", "{79E42A22-6A19-4B12-9B17-9877B6D5199F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerAPP", "ProducerAPP\ProducerAPP.csproj", "{534E53EF-0A3E-4AAB-9445-4D3FCD1C447F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProducerAPP", "ProducerAPP\ProducerAPP.csproj", "{534E53EF-0A3E-4AAB-9445-4D3FCD1C447F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserConsumer", "UserConsumer\UserConsumer.csproj", "{00E03422-8EBB-42AB-9B7E-76AB0B5B222E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserConsumer", "UserConsumer\UserConsumer.csproj", "{00E03422-8EBB-42AB-9B7E-76AB0B5B222E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Request-Reply", "Request-Reply", "{6A56F556-1646-4345-B4B2-9D6574E3960C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client-RR", "Client-RR\Client-RR.csproj", "{355A007C-F4DF-457F-9018-F688B141F73F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client-RR", "Client-RR\Client-RR.csproj", "{355A007C-F4DF-457F-9018-F688B141F73F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server-RR", "Server-RR\Server-RR.csproj", "{0EF4EF45-9869-4375-9D93-D318BDD46A3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server-RR", "Server-RR\Server-RR.csproj", "{0EF4EF45-9869-4375-9D93-D318BDD46A3A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ex-Ex", "Ex-Ex", "{8FB0AA5E-3305-41CA-B4B1-C571104AEB71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer-Ex-Ex", "Consumer-Ex-Ex\Consumer-Ex-Ex.csproj", "{31361514-D713-4A40-A402-B3E781FFACE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer-Ex-Ex", "Consumer-Ex-Ex\Consumer-Ex-Ex.csproj", "{31361514-D713-4A40-A402-B3E781FFACE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer-Ex-Ex", "Producer-Ex-Ex\Producer-Ex-Ex.csproj", "{88AAB0D8-861C-4086-A565-A244084CDC5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producer-Ex-Ex", "Producer-Ex-Ex\Producer-Ex-Ex.csproj", "{88AAB0D8-861C-4086-A565-A244084CDC5F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Headers-Exchange", "Headers-Exchange", "{AE9B448A-6A42-425E-B5DC-4A9280339C1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer-HE", "Consumer-HE\Consumer-HE.csproj", "{A5B8962F-BFE8-46D1-A391-8868D553AE87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer-HE", "Consumer-HE\Consumer-HE.csproj", "{A5B8962F-BFE8-46D1-A391-8868D553AE87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer-HE", "Producer-HE\Producer-HE.csproj", "{694AC84E-AE5B-4BC2-99F2-EA2AAAA9A142}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producer-HE", "Producer-HE\Producer-HE.csproj", "{694AC84E-AE5B-4BC2-99F2-EA2AAAA9A142}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consistant-Hashing-Exchange", "Consistant-Hashing-Exchange", "{3BD6D709-73AB-4B9B-AC7B-2D3545520B34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer-CHE", "Consumer-CHE\Consumer-CHE.csproj", "{2AB7DDE4-4AF8-4D1B-9CAD-950A06F6C00D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer-CHE", "Consumer-CHE\Consumer-CHE.csproj", "{2AB7DDE4-4AF8-4D1B-9CAD-950A06F6C00D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer-CHE", "Producer-CHE\Producer-CHE.csproj", "{1D258490-58F6-41ED-A4B7-C8DC974938EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producer-CHE", "Producer-CHE\Producer-CHE.csproj", "{1D258490-58F6-41ED-A4B7-C8DC974938EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Alternate-Exchange", "Alternate-Exchange", "{7D31B4A5-96C7-4B9E-9220-8552D86FD698}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer-AE", "Consumer-AE\Consumer-AE.csproj", "{A2D9F4D2-88DD-480C-B674-B938C5318E93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer-AE", "Consumer-AE\Consumer-AE.csproj", "{A2D9F4D2-88DD-480C-B674-B938C5318E93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer-AE", "Producer-AE\Producer-AE.csproj", "{16574724-1473-4AB0-B392-A3EA4617430B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producer-AE", "Producer-AE\Producer-AE.csproj", "{16574724-1473-4AB0-B392-A3EA4617430B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{44E2C2AA-BC7C-418B-9FE8-AD0FE0D265B6}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gRPC", "gRPC", "{48287682-C048-4BCB-AD1B-2D8775DA8570}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcService", "GrpcService\GrpcService.csproj", "{6FB36155-2045-4C88-98F9-4A0B81560008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClient", "GrpcClient\GrpcClient.csproj", "{126B99D1-8942-4E4D-960E-A7B88F6D8FE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -154,6 +165,14 @@ Global
 		{16574724-1473-4AB0-B392-A3EA4617430B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16574724-1473-4AB0-B392-A3EA4617430B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16574724-1473-4AB0-B392-A3EA4617430B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB36155-2045-4C88-98F9-4A0B81560008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB36155-2045-4C88-98F9-4A0B81560008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB36155-2045-4C88-98F9-4A0B81560008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB36155-2045-4C88-98F9-4A0B81560008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{126B99D1-8942-4E4D-960E-A7B88F6D8FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126B99D1-8942-4E4D-960E-A7B88F6D8FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126B99D1-8942-4E4D-960E-A7B88F6D8FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126B99D1-8942-4E4D-960E-A7B88F6D8FE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -185,6 +204,8 @@ Global
 		{7D31B4A5-96C7-4B9E-9220-8552D86FD698} = {8C775AD7-8607-4363-AFF8-4A3C134D34A2}
 		{A2D9F4D2-88DD-480C-B674-B938C5318E93} = {7D31B4A5-96C7-4B9E-9220-8552D86FD698}
 		{16574724-1473-4AB0-B392-A3EA4617430B} = {7D31B4A5-96C7-4B9E-9220-8552D86FD698}
+		{6FB36155-2045-4C88-98F9-4A0B81560008} = {48287682-C048-4BCB-AD1B-2D8775DA8570}
+		{126B99D1-8942-4E4D-960E-A7B88F6D8FE3} = {48287682-C048-4BCB-AD1B-2D8775DA8570}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA14B41C-75F2-4A2B-8D55-2863D1815AE1}
