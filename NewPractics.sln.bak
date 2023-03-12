@@ -85,7 +85,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WithOtherDatabaseClient", "WithOtherDatabaseClient", "{D12C4364-0ECD-47A6-8CFB-471F195F224F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer\AuthDemo.IdentityServer4.App", "AuthDemo.IdentityServer4.App\AuthDemo.IdentityServer4.App.csproj", "{8654189B-8518-41B3-A4B3-ED7195CABBAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthDemo.IdentityServer4.App", "AuthDemo.IdentityServer4.App\AuthDemo.IdentityServer4.App.csproj", "{8654189B-8518-41B3-A4B3-ED7195CABBAF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LearnMicroservices", "LearnMicroservices", "{60E89F1F-1767-46CB-B9F5-81B08313ED36}"
 EndProject
