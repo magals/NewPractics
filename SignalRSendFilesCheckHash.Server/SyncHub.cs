@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.SignalR;
+using Serilog;
+using Serilog.Extensions.Hosting;
 using SignalRSendFilesCheckHash.Models;
 
 namespace SignalRSendFilesCheckHash.Server;
@@ -6,10 +8,13 @@ namespace SignalRSendFilesCheckHash.Server;
 public class SyncHub : Hub
 {
   FileInfo[] Files;
-  public SyncHub()
+  private readonly ILogger<SyncHub> logger;
+
+  public SyncHub(ILogger<SyncHub> logger)
   {
     DirectoryInfo directinfo = new DirectoryInfo(@"assets");
     Files = directinfo.GetFiles();
+    this.logger = logger;
   }
   public async IAsyncEnumerable<FileDTO> SyncGetFileListAsync()
   {
@@ -29,7 +34,7 @@ public class SyncHub : Hub
 
   public override Task OnConnectedAsync()
   {
-    Console.WriteLine("OnConnectedAsync");
+    logger.LogInformation("OnConnectedAsync");
     return base.OnConnectedAsync();
   }
 }

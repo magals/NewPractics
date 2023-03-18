@@ -1,15 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Microsoft.AspNetCore.SignalR.Client;
+using Microsoft.Extensions.DependencyInjection;
 using SignalRSendFilesCheckHash.Models;
-
-Console.WriteLine("Hello, World!");
-
-
 try
 {
 
   HubConnection connection = new HubConnectionBuilder()
-                .WithUrl("http://localhost:5152" + "/SyncHub")
+                .WithUrl("http://localhost:5206" + "/SyncHub")
+                .AddMessagePackProtocol()
                 .Build();
   connection.StartAsync().Wait();
 
@@ -17,19 +15,14 @@ try
 
   Task.Run(async () =>
   {
-    while (true)
-    {
       await foreach (var file in connection.StreamAsync<FileDTO>("SyncGetFileListAsync"))
       {
         Console.WriteLine("file name:{0} file.Content:{1}", file.FileName, file.Content.Length);
         await File.WriteAllBytesAsync("assets//" + file.FileName, file.Content);
       }
       GC.Collect();
-    }
-  });
-
-  Console.WriteLine(value: "End");
-  Console.Read();
+    await connection.DisposeAsync();
+  }).Wait();
 
 }
 catch (Exception e)
