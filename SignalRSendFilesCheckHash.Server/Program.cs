@@ -11,6 +11,7 @@ Log.Logger = new LoggerConfiguration()
 try
 {
   var builder = WebApplication.CreateBuilder(args);
+
   builder.Host.UseSerilog((context, services, configuration) => configuration
     .ReadFrom.Configuration(context.Configuration)
     .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
@@ -41,7 +42,10 @@ try
   builder.Services.AddHostedService(_ => _.GetRequiredService<ReadHashContentService>());
 
   var app = builder.Build();
-  app.UseSerilogRequestLogging();
+  app.UseSerilogRequestLogging(options =>
+  {
+    options.EnrichDiagnosticContext = Enricher.HttpRequestEnricher;
+  });
   app.MapHub<SyncHub>("/SyncHub");
   app.Run();
 }
