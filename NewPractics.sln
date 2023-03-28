@@ -115,29 +115,37 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Duende.AdminPanel.Shared", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalR", "SignalR", "{562D3465-710D-4DA5-B7D4-433D144D43D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSignalRServer", "SimpleSignalRServer\SimpleSignalRServer.csproj", "{24BFD294-97E3-4F28-959C-1B445978EDE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleSignalRServer", "SimpleSignalRServer\SimpleSignalRServer.csproj", "{24BFD294-97E3-4F28-959C-1B445978EDE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSignalRClient", "SimpleSignalRClient\SimpleSignalRClient.csproj", "{FB78A56F-4670-46F2-BF8D-3CE456966803}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleSignalRClient", "SimpleSignalRClient\SimpleSignalRClient.csproj", "{FB78A56F-4670-46F2-BF8D-3CE456966803}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRSendFiles", "SignalRSendFiles", "{F403697D-25CF-4864-A977-FE9F8BFB5FD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIgnalRSendFilesServer", "SIgnalRSendFilesServer\SIgnalRSendFilesServer.csproj", "{2B382AD0-77C1-4C89-863D-D0FF98B62C56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIgnalRSendFilesServer", "SIgnalRSendFilesServer\SIgnalRSendFilesServer.csproj", "{2B382AD0-77C1-4C89-863D-D0FF98B62C56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIgnalRResponceFilesClient", "SIgnalRResponceFilesClient\SIgnalRResponceFilesClient.csproj", "{C4B3D81B-38FA-4E55-9205-2BDC0FF38E26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIgnalRResponceFilesClient", "SIgnalRResponceFilesClient\SIgnalRResponceFilesClient.csproj", "{C4B3D81B-38FA-4E55-9205-2BDC0FF38E26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRSendFilesModels", "SignalRSendFilesModels\SignalRSendFilesModels.csproj", "{D7E6D4FE-12C9-4B8A-A3F7-2C9D786423AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRSendFilesModels", "SignalRSendFilesModels\SignalRSendFilesModels.csproj", "{D7E6D4FE-12C9-4B8A-A3F7-2C9D786423AE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LearnSpanT", "LearnSpanT", "{50CA4F4A-5288-431B-9CD3-B32F1C1B5467}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnSpanT", "LearnSpanT\LearnSpanT.csproj", "{F934CC19-8091-4D25-870C-87DCED76CE26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnSpanT", "LearnSpanT\LearnSpanT.csproj", "{F934CC19-8091-4D25-870C-87DCED76CE26}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRSendFilesCheckHash", "SignalRSendFilesCheckHash", "{6B95E90A-421C-44EC-AEBD-1FB9DD9F1AF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRSendFilesCheckHash.Models", "SignalRSendFilesCheckHash.Models\SignalRSendFilesCheckHash.Models.csproj", "{09AB81FC-13E4-428E-973A-98368907444D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRSendFilesCheckHash.Models", "SignalRSendFilesCheckHash.Models\SignalRSendFilesCheckHash.Models.csproj", "{09AB81FC-13E4-428E-973A-98368907444D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRSendFilesCheckHash.Client", "SignalRSendFilesCheckHash.Client\SignalRSendFilesCheckHash.Client.csproj", "{25AFCF2D-62AD-43E5-B4D9-D43C236CFDF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRSendFilesCheckHash.Client", "SignalRSendFilesCheckHash.Client\SignalRSendFilesCheckHash.Client.csproj", "{25AFCF2D-62AD-43E5-B4D9-D43C236CFDF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRSendFilesCheckHash.Server", "SignalRSendFilesCheckHash.Server\SignalRSendFilesCheckHash.Server.csproj", "{AB9EA9A8-5134-46E2-A0BB-76021FB50BF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRSendFilesCheckHash.Server", "SignalRSendFilesCheckHash.Server\SignalRSendFilesCheckHash.Server.csproj", "{AB9EA9A8-5134-46E2-A0BB-76021FB50BF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRGenerationClient", "SignalRGenerationClient", "{0D89B606-2117-41C4-9F24-6FC2EF6BACAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRGenerationClient.Client", "SignalRGenerationClient.Client\SignalRGenerationClient.Client.csproj", "{32B5CE50-65E7-4D7D-91C8-1085D655A5DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRGenerationClient.Server", "SignalRGenerationClient.Server\SignalRGenerationClient.Server.csproj", "{82F9DA51-96F8-484D-87D8-53552DC399B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRGenerationClient.Shared", "SignalRGenerationClient.Shared\SignalRGenerationClient.Shared.csproj", "{7D889639-589C-4785-8AFD-CBED9985F0FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -329,6 +337,18 @@ Global
 		{AB9EA9A8-5134-46E2-A0BB-76021FB50BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB9EA9A8-5134-46E2-A0BB-76021FB50BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB9EA9A8-5134-46E2-A0BB-76021FB50BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B5CE50-65E7-4D7D-91C8-1085D655A5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B5CE50-65E7-4D7D-91C8-1085D655A5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B5CE50-65E7-4D7D-91C8-1085D655A5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B5CE50-65E7-4D7D-91C8-1085D655A5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F9DA51-96F8-484D-87D8-53552DC399B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F9DA51-96F8-484D-87D8-53552DC399B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F9DA51-96F8-484D-87D8-53552DC399B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F9DA51-96F8-484D-87D8-53552DC399B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D889639-589C-4785-8AFD-CBED9985F0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D889639-589C-4785-8AFD-CBED9985F0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D889639-589C-4785-8AFD-CBED9985F0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D889639-589C-4785-8AFD-CBED9985F0FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -389,6 +409,10 @@ Global
 		{09AB81FC-13E4-428E-973A-98368907444D} = {6B95E90A-421C-44EC-AEBD-1FB9DD9F1AF9}
 		{25AFCF2D-62AD-43E5-B4D9-D43C236CFDF9} = {6B95E90A-421C-44EC-AEBD-1FB9DD9F1AF9}
 		{AB9EA9A8-5134-46E2-A0BB-76021FB50BF5} = {6B95E90A-421C-44EC-AEBD-1FB9DD9F1AF9}
+		{0D89B606-2117-41C4-9F24-6FC2EF6BACAC} = {562D3465-710D-4DA5-B7D4-433D144D43D3}
+		{32B5CE50-65E7-4D7D-91C8-1085D655A5DA} = {0D89B606-2117-41C4-9F24-6FC2EF6BACAC}
+		{82F9DA51-96F8-484D-87D8-53552DC399B0} = {0D89B606-2117-41C4-9F24-6FC2EF6BACAC}
+		{7D889639-589C-4785-8AFD-CBED9985F0FA} = {0D89B606-2117-41C4-9F24-6FC2EF6BACAC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA14B41C-75F2-4A2B-8D55-2863D1815AE1}
