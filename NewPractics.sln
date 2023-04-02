@@ -145,7 +145,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRGenerationClient.Cli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRGenerationClient.Server", "SignalRGenerationClient.Server\SignalRGenerationClient.Server.csproj", "{82F9DA51-96F8-484D-87D8-53552DC399B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRGenerationClient.Shared", "SignalRGenerationClient.Shared\SignalRGenerationClient.Shared.csproj", "{7D889639-589C-4785-8AFD-CBED9985F0FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRGenerationClient.Shared", "SignalRGenerationClient.Shared\SignalRGenerationClient.Shared.csproj", "{7D889639-589C-4785-8AFD-CBED9985F0FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRTypedSignalR.Client.DevTools", "SignalRTypedSignalR.Client.DevTools", "{CC4D440F-3205-43D1-B49C-53E50F62AF3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRTypedSignalR.Client.DevTools.Server", "SignalRTypedSignalR.Client.DevTools.Server\SignalRTypedSignalR.Client.DevTools.Server.csproj", "{A4177EEE-E41E-4E66-B100-FCE33FFC0C84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -349,6 +353,10 @@ Global
 		{7D889639-589C-4785-8AFD-CBED9985F0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D889639-589C-4785-8AFD-CBED9985F0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D889639-589C-4785-8AFD-CBED9985F0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4177EEE-E41E-4E66-B100-FCE33FFC0C84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4177EEE-E41E-4E66-B100-FCE33FFC0C84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4177EEE-E41E-4E66-B100-FCE33FFC0C84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4177EEE-E41E-4E66-B100-FCE33FFC0C84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -413,6 +421,8 @@ Global
 		{32B5CE50-65E7-4D7D-91C8-1085D655A5DA} = {0D89B606-2117-41C4-9F24-6FC2EF6BACAC}
 		{82F9DA51-96F8-484D-87D8-53552DC399B0} = {0D89B606-2117-41C4-9F24-6FC2EF6BACAC}
 		{7D889639-589C-4785-8AFD-CBED9985F0FA} = {0D89B606-2117-41C4-9F24-6FC2EF6BACAC}
+		{CC4D440F-3205-43D1-B49C-53E50F62AF3B} = {562D3465-710D-4DA5-B7D4-433D144D43D3}
+		{A4177EEE-E41E-4E66-B100-FCE33FFC0C84} = {CC4D440F-3205-43D1-B49C-53E50F62AF3B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA14B41C-75F2-4A2B-8D55-2863D1815AE1}
