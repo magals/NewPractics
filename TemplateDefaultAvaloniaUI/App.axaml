@@ -1,0 +1,15 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:converts="using:TemplateDefaultAvaloniaUI.Infostructure.Converts"
+             xmlns:local="using:TemplateDefaultAvaloniaUI"
+             x:Class="TemplateDefaultAvaloniaUI.App">
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+	<Application.Resources>
+		<converts:EnumTabPagetoIndexConverter x:Key="enumTabPagetoIndexConverter"/>
+	</Application.Resources>
+    <Application.Styles>
+        <FluentTheme Mode="Light"/>
+    </Application.Styles>
+</Application>
