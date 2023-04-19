@@ -45,12 +45,24 @@ public partial class App : Application
     services.AddTransient(s =>
     {
       var model = s.GetRequiredService<PageWithImageViewModel>();
-      var temp_PostTerminalFastChooseItemView = new PageWithImage()
+      var result = new PageWithImage()
       {
         DataContext = model
       };
 
-      return temp_PostTerminalFastChooseItemView;
+      return result;
+    });
+
+    services.AddTransient<PageWithSecondImageViewModel>();
+    services.AddTransient(s =>
+    {
+      var model = s.GetRequiredService<PageWithSecondImage>();
+      var result = new PageWithImage()
+      {
+        DataContext = model
+      };
+
+      return result;
     });
 
   }

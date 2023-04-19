@@ -4,14 +4,66 @@
 		xmlns:vp="clr-namespace:TemplateDefaultAvaloniaUI.Views.Pages"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" 
+		d:DesignWidth="400" 
+		d:DesignHeight="400"
+		MaxHeight="400"
+		MaxWidth="400"
+		MinHeight="400"
+		MinWidth="400"
         x:Class="TemplateDefaultAvaloniaUI.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="TemplateDefaultAvaloniaUI">
+        Title="TemplateDefaultAvaloniaUI"
+		xmlns:enums="clr-namespace:TemplateDefaultAvaloniaUI.Models.Enums">
 	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
         <TextBlock Text="{Binding Greeting}" 
 				   HorizontalAlignment="Center" 
 				   VerticalAlignment="Top"/>
-		<vp:PageWithImage DataContext="{Binding PageWithImageViewModel}"/>
+
+		<TabControl>
+			<TabItem Header="Default"
+					 IsVisible="False"
+					 IsSelected="{Binding ChooseImage, 
+										  Converter={StaticResource enumTabPagetoIndexConverter}, 
+										  ConverterParameter={x:Static enums:ChooseImage.First}}">
+				<vp:PageWithImage DataContext="{Binding PageWithImageViewModel}"/>
+			</TabItem>
+			
+			<TabItem Header="Active"
+					 IsVisible="False"
+					 IsSelected="{Binding ChooseImage, 
+										  Converter={StaticResource enumTabPagetoIndexConverter}, 
+										  ConverterParameter={x:Static enums:ChooseImage.Second}}">
+				<vp:PageWithSecondImage DataContext="{Binding PageWithSecondImageViewModel}"/>
+			</TabItem>
+		</TabControl>
+
+		<Grid Grid.Row="1"
+			  HorizontalAlignment="Center">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+
+			</Grid.ColumnDefinitions>
+
+			<Button Width="100"
+					Height="50"
+					Content="First"
+					Grid.Column="0"
+					Command="{Binding ChooseImagesCommand}"
+					CommandParameter="{x:Static enums:ChooseImage.First}"/>
+			
+			<Button Width="100"
+					Height="50"
+					Content="Second"
+					Grid.Column="1"
+					Command="{Binding ChooseImagesCommand}"
+					CommandParameter="{x:Static enums:ChooseImage.Second}"/>
+			
+		</Grid>
 	</Grid>
 </Window>

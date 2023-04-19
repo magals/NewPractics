@@ -26,6 +26,13 @@ internal class EnumTabPagetoIndexConverter : IValueConverter
       return mainViewState == viewType;
     }
 
+    if (value is ChooseImage chooseImage)
+    {
+      ChooseImage viewType = (ChooseImage)parameter;
+
+      return chooseImage == viewType;
+    }
+
     return false;
   }
 
