@@ -8,7 +8,8 @@ namespace TemplateDefaultAvaloniaUI.ViewModels;
 partial class MainWindowViewModel : ObservableObject
 {
   private readonly ILogger<MainWindowViewModel> logger;
-  private readonly PageWithImageViewModel pageWithImageViewModel;
+  public PageWithImageViewModel PageWithImageViewModel { get; }
+
   [ObservableProperty]
   private string greeting = "Welcome to Avalonia!";
 
@@ -16,7 +17,8 @@ partial class MainWindowViewModel : ObservableObject
                              PageWithImageViewModel pageWithImageViewModel)
   {
     this.logger = logger;
-    this.pageWithImageViewModel = pageWithImageViewModel;
+    this.PageWithImageViewModel = pageWithImageViewModel;
+
     logger.LogInformation("MainWindowViewModel Show");
   }
 }

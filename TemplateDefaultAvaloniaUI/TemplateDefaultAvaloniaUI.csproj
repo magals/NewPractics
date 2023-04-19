@@ -12,7 +12,6 @@
   <ItemGroup>
     <Folder Include="Infostructure\Services\" />
     <AvaloniaResource Include="Assets\**" />
-    <AvaloniaResource Remove="Assets\Images\bee-146810332.jpg" />
     <None Remove=".gitignore" />
     <None Remove="appsettings.json" />
     <None Remove="Assets\Images\bee-146810332.jpg" />
@@ -23,9 +22,6 @@
 		<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 		<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <EditorConfigFiles Include="Assets\Images\bee-146810332.jpg" />
   </ItemGroup>
   <ItemGroup>
 	<!--This helps with theme dll-s trimming.
