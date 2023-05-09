@@ -171,6 +171,10 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupDLLActiveX", "SetupDLL
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupDLLActiveXWizard", "SetupDLLActiveXWizard\SetupDLLActiveXWizard.vdproj", "{587637DF-36C8-42EC-BEAA-D726370FEA5A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadEmbeddedDll", "LoadEmbeddedDll", "{AE18EEBE-47AB-4E07-BC80-18A1987EA053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLoadEmbeddedDllFromResources", "WebLoadEmbeddedDllFromResources\WebLoadEmbeddedDllFromResources.csproj", "{09FF89F1-4163-4070-973E-E843556EAE64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -397,6 +401,10 @@ Global
 		{9D20978E-1DBA-4A43-B2C2-F7C69E468F27}.Release|Any CPU.ActiveCfg = Release
 		{587637DF-36C8-42EC-BEAA-D726370FEA5A}.Debug|Any CPU.ActiveCfg = Debug
 		{587637DF-36C8-42EC-BEAA-D726370FEA5A}.Release|Any CPU.ActiveCfg = Release
+		{09FF89F1-4163-4070-973E-E843556EAE64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09FF89F1-4163-4070-973E-E843556EAE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09FF89F1-4163-4070-973E-E843556EAE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09FF89F1-4163-4070-973E-E843556EAE64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -471,6 +479,7 @@ Global
 		{C7E7E573-2AC1-46A8-B8E1-A699E520A5F9} = {F743D07D-8D70-44DA-902B-3B09C5967C67}
 		{9D20978E-1DBA-4A43-B2C2-F7C69E468F27} = {F743D07D-8D70-44DA-902B-3B09C5967C67}
 		{587637DF-36C8-42EC-BEAA-D726370FEA5A} = {F743D07D-8D70-44DA-902B-3B09C5967C67}
+		{09FF89F1-4163-4070-973E-E843556EAE64} = {AE18EEBE-47AB-4E07-BC80-18A1987EA053}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA14B41C-75F2-4A2B-8D55-2863D1815AE1}
