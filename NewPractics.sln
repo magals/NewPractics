@@ -173,7 +173,11 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupDLLActiveXWizard", "Se
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadEmbeddedDll", "LoadEmbeddedDll", "{AE18EEBE-47AB-4E07-BC80-18A1987EA053}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLoadEmbeddedDllFromResources", "WebLoadEmbeddedDllFromResources\WebLoadEmbeddedDllFromResources.csproj", "{09FF89F1-4163-4070-973E-E843556EAE64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebLoadEmbeddedDllFromResources", "WebLoadEmbeddedDllFromResources\WebLoadEmbeddedDllFromResources.csproj", "{09FF89F1-4163-4070-973E-E843556EAE64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCoreAsWindowsService", "AspNetCoreAsWindowsService", "{AF263429-1165-43C6-98BA-9E23084460C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowServiceTemplate2", "WindowServiceTemplate2\WindowServiceTemplate2.csproj", "{052BDC49-2A33-4EDF-BF34-87226D3CA690}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -405,6 +409,10 @@ Global
 		{09FF89F1-4163-4070-973E-E843556EAE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09FF89F1-4163-4070-973E-E843556EAE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09FF89F1-4163-4070-973E-E843556EAE64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052BDC49-2A33-4EDF-BF34-87226D3CA690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052BDC49-2A33-4EDF-BF34-87226D3CA690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052BDC49-2A33-4EDF-BF34-87226D3CA690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052BDC49-2A33-4EDF-BF34-87226D3CA690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -480,6 +488,7 @@ Global
 		{9D20978E-1DBA-4A43-B2C2-F7C69E468F27} = {F743D07D-8D70-44DA-902B-3B09C5967C67}
 		{587637DF-36C8-42EC-BEAA-D726370FEA5A} = {F743D07D-8D70-44DA-902B-3B09C5967C67}
 		{09FF89F1-4163-4070-973E-E843556EAE64} = {AE18EEBE-47AB-4E07-BC80-18A1987EA053}
+		{052BDC49-2A33-4EDF-BF34-87226D3CA690} = {AF263429-1165-43C6-98BA-9E23084460C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA14B41C-75F2-4A2B-8D55-2863D1815AE1}
