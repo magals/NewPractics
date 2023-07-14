@@ -1,0 +1,1 @@
+﻿CMD -k "C:\Users\ITEng\source\repos\NewPractics\AspWindowService\bin\Release\net7.0\publish\AspWindowService.exe /Install"
