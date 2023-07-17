@@ -189,7 +189,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{7D8B7AF9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MadBlazor", "MadBlazor", "{13802CBE-7C17-4F52-BF61-CD06E84D1377}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleExampleMadBlazor", "SimpleExampleMadBlazor\SimpleExampleMadBlazor.csproj", "{13552989-C75E-4FCA-B600-F1208955683C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleExampleMadBlazor", "SimpleExampleMadBlazor\SimpleExampleMadBlazor.csproj", "{13552989-C75E-4FCA-B600-F1208955683C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
