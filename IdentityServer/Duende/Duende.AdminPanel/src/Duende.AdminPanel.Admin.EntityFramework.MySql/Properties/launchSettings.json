@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Duende.AdminPanel.Admin.EntityFramework.MySql": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:51498;http://localhost:51499"
+    }
+  }
+}

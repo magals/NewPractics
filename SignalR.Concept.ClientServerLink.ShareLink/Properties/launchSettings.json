@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SignalR.Concept.ClientServerLink.ShareLink": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:51520;http://localhost:51521"
+    }
+  }
+}
