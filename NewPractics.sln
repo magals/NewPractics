@@ -191,6 +191,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MadBlazor", "MadBlazor", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleExampleMadBlazor", "SimpleExampleMadBlazor\SimpleExampleMadBlazor.csproj", "{13552989-C75E-4FCA-B600-F1208955683C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FieldButtonMadBlazor", "FieldButtonMadBlazor\FieldButtonMadBlazor.csproj", "{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -435,6 +437,10 @@ Global
 		{13552989-C75E-4FCA-B600-F1208955683C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13552989-C75E-4FCA-B600-F1208955683C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13552989-C75E-4FCA-B600-F1208955683C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -516,6 +522,7 @@ Global
 		{07ADDC70-F49B-4A29-BCCA-08069AB78D54} = {B63A05F6-1A21-4B36-93E4-AF08E0099DF6}
 		{13802CBE-7C17-4F52-BF61-CD06E84D1377} = {7D8B7AF9-AA78-44CA-A44A-639FC77B80CD}
 		{13552989-C75E-4FCA-B600-F1208955683C} = {13802CBE-7C17-4F52-BF61-CD06E84D1377}
+		{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F} = {13802CBE-7C17-4F52-BF61-CD06E84D1377}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA14B41C-75F2-4A2B-8D55-2863D1815AE1}
