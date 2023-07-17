@@ -177,13 +177,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebLoadEmbeddedDllFromResou
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCoreAsWindowsService", "AspNetCoreAsWindowsService", "{AF263429-1165-43C6-98BA-9E23084460C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowServiceTemplate2", "WindowServiceTemplate2\WindowServiceTemplate2.csproj", "{052BDC49-2A33-4EDF-BF34-87226D3CA690}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowServiceTemplate2", "WindowServiceTemplate2\WindowServiceTemplate2.csproj", "{052BDC49-2A33-4EDF-BF34-87226D3CA690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspWindowService", "AspWindowService\AspWindowService.csproj", "{CC535320-D28B-4B88-90B1-69A1CBA8B1DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspWindowService", "AspWindowService\AspWindowService.csproj", "{CC535320-D28B-4B88-90B1-69A1CBA8B1DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installer", "Installer", "{B63A05F6-1A21-4B36-93E4-AF08E0099DF6}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupAspWindowService", "SetupAspWindowService\SetupAspWindowService.vdproj", "{07ADDC70-F49B-4A29-BCCA-08069AB78D54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{7D8B7AF9-AA78-44CA-A44A-639FC77B80CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MadBlazor", "MadBlazor", "{13802CBE-7C17-4F52-BF61-CD06E84D1377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleExampleMadBlazor", "SimpleExampleMadBlazor\SimpleExampleMadBlazor.csproj", "{13552989-C75E-4FCA-B600-F1208955683C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -425,6 +431,10 @@ Global
 		{CC535320-D28B-4B88-90B1-69A1CBA8B1DD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{07ADDC70-F49B-4A29-BCCA-08069AB78D54}.Debug|Any CPU.ActiveCfg = Debug
 		{07ADDC70-F49B-4A29-BCCA-08069AB78D54}.Release|Any CPU.ActiveCfg = Release
+		{13552989-C75E-4FCA-B600-F1208955683C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13552989-C75E-4FCA-B600-F1208955683C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13552989-C75E-4FCA-B600-F1208955683C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13552989-C75E-4FCA-B600-F1208955683C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -504,6 +514,8 @@ Global
 		{CC535320-D28B-4B88-90B1-69A1CBA8B1DD} = {AF263429-1165-43C6-98BA-9E23084460C9}
 		{B63A05F6-1A21-4B36-93E4-AF08E0099DF6} = {AF263429-1165-43C6-98BA-9E23084460C9}
 		{07ADDC70-F49B-4A29-BCCA-08069AB78D54} = {B63A05F6-1A21-4B36-93E4-AF08E0099DF6}
+		{13802CBE-7C17-4F52-BF61-CD06E84D1377} = {7D8B7AF9-AA78-44CA-A44A-639FC77B80CD}
+		{13552989-C75E-4FCA-B600-F1208955683C} = {13802CBE-7C17-4F52-BF61-CD06E84D1377}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA14B41C-75F2-4A2B-8D55-2863D1815AE1}
