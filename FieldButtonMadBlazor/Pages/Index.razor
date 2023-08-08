@@ -2,6 +2,44 @@
 
 <PageTitle>Index</PageTitle>
 
-<MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>
-<MudText Class="mb-8">Welcome to your new app, powered by MudBlazor!</MudText>
-<MudAlert Severity="Severity.Normal">You can find documentation and examples on our website here: <MudLink Href="https://mudblazor.com" Typo="Typo.body2" Color="Color.Inherit"><b>www.mudblazor.com</b></MudLink></MudAlert>
+<MudGrid>
+    <MudItem xs="2" sm="6" md="1">
+        <MudText Class="ms-2">Processing</MudText>
+    </MudItem>
+    <MudItem xs="2" sm="6" md="6">
+        <MudField Variant="Variant.Text"></MudField>
+    </MudItem>
+    <MudItem xs="12" sm="6" md="3">
+        <MudButton Variant="Variant.Filled" Color="Color.Primary">Path</MudButton>
+
+    </MudItem>
+    <MudItem xs="12" sm="6" md="2">
+        <MudButton Disabled="@_processing" 
+                   OnClick="ProcessSomething" 
+                   Variant="Variant.Filled" 
+                   Color="Color.Info"
+                   StartIcon="@Icons.Material.Filled.Save">
+            @if (_processing)
+            {
+                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                <MudText Class="ms-2">Processing</MudText>
+            }
+            else
+            {
+                <MudText>Save</MudText>
+            }
+        </MudButton>
+    </MudItem>
+</MudGrid>
+
+
+@code {
+    private bool _processing = false;
+
+    async Task ProcessSomething()
+    {
+        _processing = true;
+        await Task.Delay(2000);
+        _processing = false;
+    }
+}

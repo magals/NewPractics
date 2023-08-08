@@ -193,6 +193,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleExampleMadBlazor", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FieldButtonMadBlazor", "FieldButtonMadBlazor\FieldButtonMadBlazor.csproj", "{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalR.GenerationClientAndDevTools", "SignalR.GenerationClientAndDevTools", "{C97CBFBD-F2F4-439B-A76E-962A3B1DD07B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.GenerationClientAndDevTools.Server", "SignalR.GenerationClientAndDevTools.Server\SignalR.GenerationClientAndDevTools.Server.csproj", "{CD0A3F13-71E3-4818-8EAB-201D8F501D36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.GenerationClientAndDevTools.Client", "SignalR.GenerationClientAndDevTools.Client\SignalR.GenerationClientAndDevTools.Client.csproj", "{BABD58C3-0B07-44C6-9A18-CFB4C10AE218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.GenerationClientAndDevTools.Shared", "SignalR.GenerationClientAndDevTools.Models\SignalR.GenerationClientAndDevTools.Shared.csproj", "{23889201-0E08-40BE-AA1D-C4065502E335}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -441,6 +449,18 @@ Global
 		{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0A3F13-71E3-4818-8EAB-201D8F501D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0A3F13-71E3-4818-8EAB-201D8F501D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0A3F13-71E3-4818-8EAB-201D8F501D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0A3F13-71E3-4818-8EAB-201D8F501D36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BABD58C3-0B07-44C6-9A18-CFB4C10AE218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BABD58C3-0B07-44C6-9A18-CFB4C10AE218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BABD58C3-0B07-44C6-9A18-CFB4C10AE218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BABD58C3-0B07-44C6-9A18-CFB4C10AE218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23889201-0E08-40BE-AA1D-C4065502E335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23889201-0E08-40BE-AA1D-C4065502E335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23889201-0E08-40BE-AA1D-C4065502E335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23889201-0E08-40BE-AA1D-C4065502E335}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -523,6 +543,10 @@ Global
 		{13802CBE-7C17-4F52-BF61-CD06E84D1377} = {7D8B7AF9-AA78-44CA-A44A-639FC77B80CD}
 		{13552989-C75E-4FCA-B600-F1208955683C} = {13802CBE-7C17-4F52-BF61-CD06E84D1377}
 		{EC04A2CA-0FD4-45D9-9C74-51C0FD3E1F6F} = {13802CBE-7C17-4F52-BF61-CD06E84D1377}
+		{C97CBFBD-F2F4-439B-A76E-962A3B1DD07B} = {562D3465-710D-4DA5-B7D4-433D144D43D3}
+		{CD0A3F13-71E3-4818-8EAB-201D8F501D36} = {C97CBFBD-F2F4-439B-A76E-962A3B1DD07B}
+		{BABD58C3-0B07-44C6-9A18-CFB4C10AE218} = {C97CBFBD-F2F4-439B-A76E-962A3B1DD07B}
+		{23889201-0E08-40BE-AA1D-C4065502E335} = {C97CBFBD-F2F4-439B-A76E-962A3B1DD07B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA14B41C-75F2-4A2B-8D55-2863D1815AE1}
