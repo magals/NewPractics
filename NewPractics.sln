@@ -195,11 +195,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FieldButtonMadBlazor", "Fie
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalR.GenerationClientAndDevTools", "SignalR.GenerationClientAndDevTools", "{C97CBFBD-F2F4-439B-A76E-962A3B1DD07B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.GenerationClientAndDevTools.Server", "SignalR.GenerationClientAndDevTools.Server\SignalR.GenerationClientAndDevTools.Server.csproj", "{CD0A3F13-71E3-4818-8EAB-201D8F501D36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalR.GenerationClientAndDevTools.Server", "SignalR.GenerationClientAndDevTools.Server\SignalR.GenerationClientAndDevTools.Server.csproj", "{CD0A3F13-71E3-4818-8EAB-201D8F501D36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.GenerationClientAndDevTools.Client", "SignalR.GenerationClientAndDevTools.Client\SignalR.GenerationClientAndDevTools.Client.csproj", "{BABD58C3-0B07-44C6-9A18-CFB4C10AE218}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalR.GenerationClientAndDevTools.Client", "SignalR.GenerationClientAndDevTools.Client\SignalR.GenerationClientAndDevTools.Client.csproj", "{BABD58C3-0B07-44C6-9A18-CFB4C10AE218}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.GenerationClientAndDevTools.Shared", "SignalR.GenerationClientAndDevTools.Models\SignalR.GenerationClientAndDevTools.Shared.csproj", "{23889201-0E08-40BE-AA1D-C4065502E335}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalR.GenerationClientAndDevTools.Shared", "SignalR.GenerationClientAndDevTools.Models\SignalR.GenerationClientAndDevTools.Shared.csproj", "{23889201-0E08-40BE-AA1D-C4065502E335}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenTelemetry", "OpenTelemetry", "{D5407230-0BCB-454D-BD7D-9331C0EBDA1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstOpenTelemetry", "FirstOpenTelemetry\FirstOpenTelemetry.csproj", "{5B29CF2D-AD7B-42C3-993B-B64FBD3F3C0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -461,6 +465,10 @@ Global
 		{23889201-0E08-40BE-AA1D-C4065502E335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23889201-0E08-40BE-AA1D-C4065502E335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23889201-0E08-40BE-AA1D-C4065502E335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B29CF2D-AD7B-42C3-993B-B64FBD3F3C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B29CF2D-AD7B-42C3-993B-B64FBD3F3C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B29CF2D-AD7B-42C3-993B-B64FBD3F3C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B29CF2D-AD7B-42C3-993B-B64FBD3F3C0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -547,6 +555,7 @@ Global
 		{CD0A3F13-71E3-4818-8EAB-201D8F501D36} = {C97CBFBD-F2F4-439B-A76E-962A3B1DD07B}
 		{BABD58C3-0B07-44C6-9A18-CFB4C10AE218} = {C97CBFBD-F2F4-439B-A76E-962A3B1DD07B}
 		{23889201-0E08-40BE-AA1D-C4065502E335} = {C97CBFBD-F2F4-439B-A76E-962A3B1DD07B}
+		{5B29CF2D-AD7B-42C3-993B-B64FBD3F3C0D} = {D5407230-0BCB-454D-BD7D-9331C0EBDA1D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA14B41C-75F2-4A2B-8D55-2863D1815AE1}

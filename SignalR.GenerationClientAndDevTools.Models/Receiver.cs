@@ -1,4 +1,6 @@
-﻿namespace SignalR.GenerationClientAndDevTools.Shared;
+﻿
+
+namespace SignalR.GenerationClientAndDevTools.Shared;
 
 public class Receiver : IClientContract, TypedSignalR.Client.IHubConnectionObserver
 {

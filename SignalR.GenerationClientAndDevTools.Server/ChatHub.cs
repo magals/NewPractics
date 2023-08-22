@@ -3,6 +3,7 @@ using SignalR.GenerationClientAndDevTools.Shared;
 
 namespace SignalR.GenerationClientAndDevTools.Server;
 
+
 public class ChatHub : Hub<IClientContract>, IHubContract
 {
   public async Task<Status> SendMessage(string user, string message)
