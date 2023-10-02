@@ -1,0 +1,88 @@
+﻿@page "/"
+@using TemplateBackgroundService.Models;
+@inject AppConfig appConfig
+
+<PageTitle>Index</PageTitle>
+
+<MudGrid>
+    <MudItem xs="2" sm="6" md="2">
+        <MudText Class="ms-2">Path to SyncServer folder</MudText>
+    </MudItem>
+    <MudItem xs="2" sm="6" md="2">
+        <MudButton Disabled="@_processing"
+                   OnClick="ProcessSomething"
+                   Variant="Variant.Filled"
+                   Color="Color.Info"
+                   StartIcon="@Icons.Material.Filled.Save">
+            @if (_processing)
+            {
+                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                <MudText Class="ms-2">Processing</MudText>
+            }
+            else
+            {
+                <MudText>Save</MudText>
+            }
+        </MudButton>
+    </MudItem>
+
+    <MudItem xs="12" md="12">
+        <MudSimpleTable Dense="@dense" Hover="@hover" Bordered="@bordered" Striped="@striped" Style="overflow-x: auto;">
+            <thead>
+                <tr>
+                    @foreach (var h in headings)
+                    {
+                        <th>@h</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in logslist)
+                {
+                    <tr>
+                        <td>@row.DateTimeOffset</td>
+                        <td>@row.LogLevel</td>
+                        <td>@row.Message</td>
+                    </tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+    </MudItem>
+</MudGrid>
+
+
+@code {
+    private bool _processing = false;
+    private bool dense = false;
+    private bool hover = true;
+    private bool striped = false;
+    private bool bordered = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        CustomLoggerProvider.LogMessageAction += (logs) =>
+        {
+            logslist.Insert(0, logs);
+            
+
+            if (logslist.Count > 10)
+            {
+                logslist.Remove(logslist.Last());
+            }
+             InvokeAsync(() =>
+            {
+                StateHasChanged();
+            });
+        };
+    }
+
+    async Task ProcessSomething()
+    {
+        _processing = true;
+        await Task.Delay(500);
+        _processing = false;
+    }
+
+    string[] headings = { "DateTime", "Event", "Message"};
+    List<LogMessage> logslist = new List<LogMessage> {};
+}
