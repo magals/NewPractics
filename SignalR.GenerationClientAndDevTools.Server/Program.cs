@@ -2,8 +2,8 @@ using SignalR.GenerationClientAndDevTools.Server;
 using TypedSignalR.Client.DevTools;
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddSignalR();
-//builder.Services.AddSingleton<IMessageRepository, MessageRepository>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

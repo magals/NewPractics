@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-	
+
 	<ItemGroup>
 		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
@@ -13,7 +13,7 @@
 	</ItemGroup>
 	
   <ItemGroup>
-    <ProjectReference Include="..\SignalR.GenerationClientAndDevTools.Models\SignalR.GenerationClientAndDevTools.Shared.csproj" />
+    <ProjectReference Include="..\Share\Share.csproj" />
   </ItemGroup>
 
 </Project>

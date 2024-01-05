@@ -1,7 +1,11 @@
 using AspWindowService;
 using CliWrap;
+using Serilog;
+using Serilog.Events;
+using System.Reflection;
+using System.Runtime.InteropServices;
 
-const string ServiceName = ".AspWindowService";
+const string ServiceName = ".AspWindowService4";
 
 if (args is { Length: 1 })
 {
@@ -23,9 +27,16 @@ if (args is { Length: 1 })
     }
     else if (args[0] is "/Uninstall")
     {
-      await Cli.Wrap("sc")
-          .WithArguments(new[] { "stop", ServiceName })
-          .ExecuteAsync();
+      try
+      {
+        await Cli.Wrap("sc")
+         .WithArguments(new[] { "stop", ServiceName })
+         .ExecuteAsync();
+      }
+      catch (Exception)
+      {
+      }
+     
 
       await Cli.Wrap("sc")
           .WithArguments(new[] { "delete", ServiceName })
@@ -41,16 +52,76 @@ if (args is { Length: 1 })
 
   return;
 }
+IConfiguration Configuration = new ConfigurationBuilder()
+   .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+   .AddEnvironmentVariables()
+   .Build();
 
-var builder = WebApplication.CreateBuilder(args);
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateBootstrapLogger();
+try
+{
+  AppConfig appConfig = new();
+  Configuration.Bind(nameof(AppConfig), appConfig);
 
-builder.Services.AddRazorPages();
+  var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddWindowsService();
+  builder.Services.AddLogging(builder =>
+  {
+    var logger = GetConfigsLogger(appConfig).CreateLogger();
+
+    builder.AddSerilog(logger);
+  });
+
+  builder.Services.AddRazorPages();
+  builder.Services.AddServerSideBlazor();
+  builder.Services.AddWindowsService();
 builder.Services.AddHostedService<ServiceA>();
 
 var app = builder.Build();
 
-app.MapRazorPages();
+  if (!app.Environment.IsDevelopment())
+  {
+    app.UseExceptionHandler("/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+  }
+  app.UseHttpsRedirection();
+
+  app.UseStaticFiles();
+
+  app.UseRouting();
+
+  app.MapBlazorHub();
+  app.MapFallbackToPage("/_Host");
+
+  app.MapRazorPages();
 app.MapGet("/", () => "Hello World!");
 app.Run();
+}
+catch (Exception ex)
+{
+  Log.Fatal(ex, "Application terminated unexpectedly");
+}
+finally
+{
+  Log.Logger.Information("Close Program");
+  Log.CloseAndFlush();
+}
+
+static LoggerConfiguration GetConfigsLogger(AppConfig appConfig) =>
+new LoggerConfiguration()
+                    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+                    .Enrich.WithProperty("ApplicationName", Assembly.GetExecutingAssembly().GetName().Name)
+                    .Enrich.WithProperty("Version", Assembly.GetExecutingAssembly().GetName().Version)
+                    .Enrich.WithProperty("Windows Version", RuntimeInformation.OSDescription)
+                    .Enrich.WithProperty("UsedStore", "")
+                    .Enrich.WithMemoryUsage()
+                    .WriteTo.File(@"logs\logs-.txt", LogEventLevel.Information, rollingInterval: RollingInterval.Day, retainedFileCountLimit: 60)
+                    .Enrich.WithMachineName()
+                    .Enrich.WithThreadId()
+                    .Enrich.WithEnvironmentName()
+                    .Enrich.WithEnvironmentUserName()
+                    .Enrich.WithClientIp()
+                    .WriteTo.Console();
