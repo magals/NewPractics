@@ -6,6 +6,7 @@ namespace BasicAuthorization
 {
   public class AuthDbContext : IdentityDbContext<User, Role, string>
   {
+    public static string NameSchema { get; } = "auth";
     public AuthDbContext() { }
     public AuthDbContext(DbContextOptions<AuthDbContext> options) : base(options) { }
 
