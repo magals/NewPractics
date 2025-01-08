@@ -217,6 +217,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mapster", "Mapster", "{7C72
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapsterFirstStart", "MapsterFirstStart\MapsterFirstStart.csproj", "{C613CD14-020B-407C-869B-E8307FF59010}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth", "Auth", "{512BA0A2-3024-42AC-8A04-619EE6BA65C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicAuthorization", "BasicAuthorization\BasicAuthorization.csproj", "{F44806BC-4145-4118-AE31-77ED2B7443D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -493,6 +497,10 @@ Global
 		{C613CD14-020B-407C-869B-E8307FF59010}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C613CD14-020B-407C-869B-E8307FF59010}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C613CD14-020B-407C-869B-E8307FF59010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44806BC-4145-4118-AE31-77ED2B7443D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44806BC-4145-4118-AE31-77ED2B7443D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44806BC-4145-4118-AE31-77ED2B7443D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44806BC-4145-4118-AE31-77ED2B7443D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -583,6 +591,7 @@ Global
 		{E3E4BA08-92F6-4ADF-9952-21BF785550AF} = {4A47A4FC-4C13-49BA-AB95-A1911878CDAA}
 		{7C7290CF-3B5A-4B1E-8BA5-1ED9FDF7C69D} = {C9426CB5-4949-407D-8E46-1530620B2287}
 		{C613CD14-020B-407C-869B-E8307FF59010} = {7C7290CF-3B5A-4B1E-8BA5-1ED9FDF7C69D}
+		{F44806BC-4145-4118-AE31-77ED2B7443D9} = {512BA0A2-3024-42AC-8A04-619EE6BA65C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA14B41C-75F2-4A2B-8D55-2863D1815AE1}
